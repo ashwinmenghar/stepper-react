@@ -17,7 +17,9 @@ function Stepper() {
 
         <div className="flex items-center justify-around mt-10 relative">
           <Step step={step} isCompleted={isCompleted} />
-          <ProgressBar step={step} />
+          <div className="progress-container bg-gray-400 w-9/12 h-1 absolute top-4 -z-10">
+            <ProgressBar step={step} />
+          </div>
         </div>
 
         <div className="mt-10 flex items-center flex-col">
